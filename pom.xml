@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>jedis-example</module>
+        <module>lettuce-example</module>
     </modules>
 
     <properties>
@@ -17,5 +18,24 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>5.0.0</version>
+            </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/io.lettuce/lettuce-core -->
+            <dependency>
+                <groupId>io.lettuce</groupId>
+                <artifactId>lettuce-core</artifactId>
+                <version>6.3.1.RELEASE</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
