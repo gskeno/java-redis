@@ -11,6 +11,7 @@
     <modules>
         <module>jedis-example</module>
         <module>lettuce-example</module>
+        <module>redisson-example</module>
     </modules>
 
     <properties>
@@ -33,6 +34,12 @@
                 <groupId>io.lettuce</groupId>
                 <artifactId>lettuce-core</artifactId>
                 <version>6.3.1.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>3.27.0</version>
             </dependency>
 
         </dependencies>

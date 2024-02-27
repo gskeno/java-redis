@@ -4,7 +4,7 @@ import io.lettuce.core.RedisClient;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.sync.RedisStringCommands;
 
-public class SimpleUse {
+public class SimpleUsage {
     public static void main(String[] args) {
         basicUse();
     }
